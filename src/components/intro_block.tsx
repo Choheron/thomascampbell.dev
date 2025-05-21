@@ -12,11 +12,12 @@ const BRFont = localFont({
 
 export default function IntroBlock(props) {
   const titles = [
-    "Site Reliability Engineer",
-    "DevSecOps Engineer",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Homelab Enthusiast"
+    <p className="mx-2" key="title-SRE"><b>Site Reliability Engineer</b></p>,
+    <p className="mx-2" key="title-Devops">DevSecOps Engineer</p>,
+    <p className="mx-2" key="title-SWE">Software Engineer</p>,
+    <p className="mx-2" key="title-FullStack">Full Stack Developer</p>,
+    <p className="mx-2" key="title-Homelab">Homelab Enthusiast</p>,
+    <p className="mx-2" key="title-LifelongLearner">Lifelong Learner</p>,
   ]
   const dockLinks = [
     { title: "LinkedIn", icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>, href: "https://www.linkedin.com/in/thomasrichardcampbell/" },
@@ -25,11 +26,14 @@ export default function IntroBlock(props) {
     { title: "Email", icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 13.3414C21.3744 13.1203 20.7013 13 20 13C16.6863 13 14 15.6863 14 19C14 19.7013 14.1203 20.3744 14.3414 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V13.3414ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM21 18H24V20H21V23H19V20H16V18H19V15H21V18Z"></path></svg>, href: "mailto:trc527@gmail.com" },
     { title: "Artstation", icon: <img className="max-w-[157%]" src="/svgs/branding/artstation/ArtStation-logomark-white.svg" alt="triangle with all three sides equal"/>, href: "https://choheron.artstation.com/" },
   ]
+  
 
   return (
-    <div className="mx-auto w-full py-20 max-w-[800px]">
+    <div className="mx-auto w-full pb-20 max-w-[800px]">
       <div className="max-w-full">
-        <Headshot />
+        <div className="py-20">
+          <Headshot />
+        </div>
         <p className="text-sm sm:text-base">Hello, my name is</p>
         <WaveReveal
           className={`${BRFont.className} text-[2rem] md:text-[4rem] mx-auto w-fit -my-3 text-foreground`}
@@ -38,8 +42,8 @@ export default function IntroBlock(props) {
         />
         <div className="relative flex h-fit w-full max-w-full items-center justify-center overflow-hidden rounded text-lg">
           <Marquee pauseOnHover>
-            {titles.map((title, index) => {
-              return(<p key={index} className="mx-5">{title}</p>)
+            {titles.map((title) => {
+              return(title)
             })}
           </Marquee>
         </div>
