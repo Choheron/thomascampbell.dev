@@ -21,11 +21,11 @@ export default function Home() {
         <div className="absolute bottom-10">
           <MenuAnimation
             menuItems={[
-              <p onClick={() => scrollToSection("home")}>Home</p>,
-              <p onClick={() => scrollToSection("about-section")}>About</p>,
-              <p onClick={() => scrollToSection("project-section")}>Projects</p>,
-              <p onClick={() => scrollToSection("experience-section")}>Experience</p>,
-              <p onClick={() => scrollToSection("certifications-section")}>Certifications</p>
+              <p key="menu-1" onClick={() => scrollToSection("home")}>Home</p>,
+              <p key="menu-2" onClick={() => scrollToSection("about-section")}>About</p>,
+              <p key="menu-3" onClick={() => scrollToSection("project-section")}>Projects</p>,
+              <p key="menu-4" onClick={() => scrollToSection("experience-section")}>Experience</p>,
+              <p key="menu-5" onClick={() => scrollToSection("certifications-section")}>Certifications</p>
             ]}
         />
         </div>
