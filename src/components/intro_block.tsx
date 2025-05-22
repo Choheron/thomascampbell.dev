@@ -35,7 +35,7 @@ export default function IntroBlock() {
   
 
   return (
-    <div className="mx-auto w-full max-w-[800px] h-fit">
+    <div className="relative mx-auto w-full max-w-[800px] h-fit">
       <div className="max-w-full">
         <div className="py-20">
           <Headshot />
@@ -53,7 +53,7 @@ export default function IntroBlock() {
             })}
           </Marquee>
         </div>
-        <div className="w-fit mx-auto pt-2">
+        <div className="absolute right-5 sm:relative w-fit mx-auto pt-2">
           <AnimatedDock 
             items={dockLinks} 
             largeClassName="max-w-lg"
