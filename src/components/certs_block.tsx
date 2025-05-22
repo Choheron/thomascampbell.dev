@@ -1,4 +1,4 @@
-export default function CertsBlock(props) {
+export default function CertsBlock() {
 
   return (
     <div className="w-full h-fit px-10 py-2 max-w-full">

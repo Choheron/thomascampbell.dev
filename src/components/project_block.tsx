@@ -16,7 +16,7 @@ export type Project = {
   base_className: string
 }
 
-export default function ProjectBlock(props) {
+export default function ProjectBlock() {
   const projects: Project[] = [
     { 
       title: "CordPal",

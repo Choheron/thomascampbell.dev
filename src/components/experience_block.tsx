@@ -1,6 +1,6 @@
 import { AnimatedTimeline } from "./animata/progress/animatedtimeline";
 
-export default function ExperienceBlock(props) {
+export default function ExperienceBlock() {
   const employmentEvents = [
     { 
       id: "1", 

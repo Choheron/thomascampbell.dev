@@ -10,7 +10,7 @@ const BRFont = localFont({
   src: '../../public/fonts/blade_runner.ttf'
 })
 
-export default function IntroBlock(props) {
+export default function IntroBlock() {
   const titles = [
     <p className="mx-2" key="title-SRE"><b>Site Reliability Engineer</b></p>,
     <p key="title-spacer-1"><b>-</b></p>,

@@ -1,4 +1,4 @@
-export default function AboutBlock(props) {
+export default function AboutBlock() {
   const aboutMeText = `	
 	  I'm <b>Thomas Campbell</b>, a <i>Site Reliability Engineer/Developer</i> based in Austin, TX. With a professional passion for Creation, Automation,
 		CI/CD, Agile Methodologies, and all things DevOps. I strive to constantly improve and learn! Finding satisfaction in enhancing my skills, I am dedicated to creating functional, 
