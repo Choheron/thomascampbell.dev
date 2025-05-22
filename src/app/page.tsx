@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto w-full">
-      <div id="home" className="relative bg-[url(/images/background/BackgroundLight.jpg)] dark:bg-[url(/images/background/BackgroundDark.jpg)] bg-center bg-cover h-[100vh] content-center">
+      <div id="home" className="relative bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] content-center">
         <IntroBlock />
         <div className="absolute bottom-10">
           <MenuAnimation
