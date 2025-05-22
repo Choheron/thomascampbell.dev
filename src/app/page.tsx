@@ -6,7 +6,6 @@ import ProjectBlock from "@/components/project_block";
 import ExperienceBlock from "@/components/experience_block";
 import Footer from "@/components/footer";
 import MenuAnimation from "@/components/animata/list/menu-animation";
-import Link from 'next/link';
 import CertsBlock from "@/components/certs_block";
 
 export default function Home() {
