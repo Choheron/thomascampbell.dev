@@ -36,10 +36,10 @@ export default function Home() {
       <div id="project-section" className="bg-purple-400 dark:bg-purple-800/80 max-w-full py-5">
         <ProjectBlock />
       </div>
-      <div id="experience-section" className="bg-blue-400 dark:bg-blue-900/80 max-w-full py-5">
+      <div id="experience-section" className="bg-gray-400 dark:bg-gray-900/80 max-w-full py-5">
         <ExperienceBlock />
       </div>
-      <div id="certifications-section" className="bg-pink-400 dark:bg-pink-900/80 max-w-full py-5">
+      <div id="certifications-section" className="bg-purple-400 dark:bg-purple-800/80 max-w-full py-5">
         <CertsBlock />
       </div>
       <div>
