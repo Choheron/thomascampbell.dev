@@ -98,7 +98,7 @@ export default function OrbitingItems({
           return (
             <div
               key={index}
-              className="absolute flex h-12 w-12 items-center justify-center rounded-full bg-gray-200"
+              className="absolute flex h-12 w-12 items-center justify-center rounded-full bg-gray-100/80"
               style={calculateItemStyle({
                 index,
                 radius,
