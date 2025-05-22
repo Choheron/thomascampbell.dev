@@ -12,8 +12,8 @@ export default function AboutBlock(props) {
 
 
   return (
-    <div id="about-section" className="w-full h-fit px-10 py-2 max-w-full">
-      <p className="text-3xl underline pb-2">About me:</p>
+    <div id="about-section" className="w-full h-fit px-10 py-2 max-w-full text-xl">
+      <p className="text-3xl underline pb-2"><b>About me:</b></p>
       {/* Description */}
       <div dangerouslySetInnerHTML={{ __html: aboutMeText }}/>
     </div>

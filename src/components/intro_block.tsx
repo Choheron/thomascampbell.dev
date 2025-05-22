@@ -35,7 +35,7 @@ export default function IntroBlock(props) {
   
 
   return (
-    <div className="mx-auto w-full pb-20 max-w-[800px]">
+    <div className="mx-auto w-full max-w-[800px] h-fit">
       <div className="max-w-full">
         <div className="py-20">
           <Headshot />

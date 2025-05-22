@@ -3,8 +3,12 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   theme: {
     extend: {
+      colors: {
+        foreground: "hsl(var(--foreground))",
+      },
       transitionTimingFunction: {
         "minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",
+        slow: "cubic-bezier(.405, 0, .025, 1)",
       },
       keyframes: {
         'marquee-x': {
