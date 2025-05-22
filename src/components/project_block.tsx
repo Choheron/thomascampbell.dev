@@ -3,6 +3,7 @@ import ProjectSwapTextCard from "./animata/card/project-swap-text-card"
 import { Bebas_Neue } from "next/font/google"
 
 const bebas = Bebas_Neue({
+  subsets: ['latin'],
   weight: ['400']
 })
 
