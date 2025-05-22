@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 export interface TimelineEvent {
   id: string;
   title: string;
+  company?: string, 
+  location?: string,
   description?: string;
   date?: string;
   [key: string]: unknown; // Allow additional custom fields
@@ -89,15 +91,20 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           transition={{ duration: fillDuration, delay: fillDelay }}
         />
       </div>
-      <div className={cn("flex-grow leading-5", !isLast && "mb-3")}>
+      <div className={cn("group flex-grow leading-5", !isLast && "mb-3")}>
         {customRender ? (
           customRender(event)
         ) : (
           <>
-            <h3 className="text-lg font-semibold" style={{ color: styles.titleColor }}>
+            <h3 className="text-xl font-semibold group-hover:underline" style={{ color: styles.titleColor }}>
               {event.title}
             </h3>
-            <p style={{ color: styles.descriptionColor }}>{event.description}</p>
+            <div className="flex">
+              <p style={{ color: styles.descriptionColor }} className="font-bold">{event.company}</p>
+              <p style={{ color: styles.descriptionColor }} className="mx-1">{"-"}</p>
+              <p style={{ color: styles.descriptionColor }} className="text-sm my-auto"><i>{event.location}</i></p>
+            </div>
+            <p style={{ color: styles.descriptionColor }} >{event.description}</p>
             <span className="text-sm" style={{ color: styles.dateColor }}>
               {event.date}
             </span>

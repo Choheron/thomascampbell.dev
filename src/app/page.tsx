@@ -7,6 +7,7 @@ import ExperienceBlock from "@/components/experience_block";
 import Footer from "@/components/footer";
 import MenuAnimation from "@/components/animata/list/menu-animation";
 import Link from 'next/link';
+import CertsBlock from "@/components/certs_block";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
@@ -25,7 +26,7 @@ export default function Home() {
               <p onClick={() => scrollToSection("about-section")}>About</p>,
               <p onClick={() => scrollToSection("project-section")}>Projects</p>,
               <p onClick={() => scrollToSection("experience-section")}>Experience</p>,
-              <p onClick={() => scrollToSection("about-section")}>Certifications</p>
+              <p onClick={() => scrollToSection("certifications-section")}>Certifications</p>
             ]}
         />
         </div>
@@ -38,6 +39,9 @@ export default function Home() {
       </div>
       <div id="experience-section" className="bg-blue-400 dark:bg-blue-900/80 max-w-full py-5">
         <ExperienceBlock />
+      </div>
+      <div id="certifications-section" className="bg-pink-400 dark:bg-pink-900/80 max-w-full py-5">
+        <CertsBlock />
       </div>
       <div>
         <Footer />
