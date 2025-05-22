@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Thomas Campbell",
   description: "Thomas Campbell Portfolio Website",
   keywords: "Thomas Campbell, Thomas Richard Campell, ChoHeron, Web Developer, Full Stack, Game Designer, Game Programmer, Game Developer, Software Engineer, Web Design, George Mason University Computer Science, Computer Science, Applied Computer Science, DevOps, DevSecOps, Scrum, DevOps Engineer, DevSecOps Engineer, Jenkins, Github, CI/CD, Automation",
+  icons: {
+    icon: '/favicon.jpg'
+  }
 };
 
 export default function RootLayout({
