@@ -21,7 +21,7 @@ export default function Headshot() {
   return (
     <div className="relative shrink-0 mx-auto w-fit">
       <img 
-        src="/images/headshot/ThomasHeadshotCropped.jpg" 
+        src="/images/headshot/ThomasHeadshotCropped.webp" 
         className="rounded-full border-2 border-black hover:border-blue-500 transition-colors duration-300 ease-in-out"
         width={250}
         height={250}
