@@ -97,7 +97,7 @@ const EduTimelineItem: React.FC<EduTimelineItemProps> = ({
           customRender(event)
         ) : (
           <>
-            <div className="flex justify-between -mt-1">
+            <div className="flex flex-col sm:flex-row justify-between -mt-1">
               <h3 className="text-2xl font-semibold" style={{ color: styles.titleColor }}>
                 {event.school}
               </h3>
