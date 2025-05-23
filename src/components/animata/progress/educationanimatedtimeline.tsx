@@ -5,29 +5,30 @@ import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
-export interface TimelineEvent {
+export interface EduTimelineEvent {
   id: string;
-  title: string;
-  company?: string, 
-  location?: string,
+  school: string;
+  location?: string, 
+  degree?: string,
+  subdegree?: string,
   description?: string;
   date?: string;
   [key: string]: unknown; // Allow additional custom fields
 }
 
-interface TimelineItemProps {
-  event: TimelineEvent;
+interface EduTimelineItemProps {
+  event: EduTimelineEvent;
   isActive: boolean;
   isFirst: boolean;
   isLast: boolean;
   onHover: (index: number | null) => void;
   index: number;
   activeIndex: number | null;
-  styles: TimelineStyles;
-  customRender?: (event: TimelineEvent) => React.ReactNode;
+  styles: EduTimelineStyles;
+  customRender?: (event: EduTimelineEvent) => React.ReactNode;
 }
 
-interface TimelineStyles {
+interface EduTimelineStyles {
   lineColor: string;
   activeLineColor: string;
   dotColor: string;
@@ -38,7 +39,7 @@ interface TimelineStyles {
   dateColor: string;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({
+const EduTimelineItem: React.FC<EduTimelineItemProps> = ({
   event,
   isActive,
   isLast,
@@ -96,18 +97,27 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           customRender(event)
         ) : (
           <>
-            <h3 className="text-xl font-semibold group-hover:underline -mt-1" style={{ color: styles.titleColor }}>
-              {event.title}
-            </h3>
-            <div className="flex">
-              <p style={{ color: styles.descriptionColor }} className="font-bold">{event.company}</p>
-              <p style={{ color: styles.descriptionColor }} className="mx-1">{"-"}</p>
-              <p style={{ color: styles.descriptionColor }} className="text-sm my-auto"><i>{event.location}</i></p>
+            <div className="flex justify-between -mt-1">
+              <h3 className="text-2xl font-semibold" style={{ color: styles.titleColor }}>
+                {event.school}
+              </h3>
+              <span className="text-base mb-auto" style={{ color: styles.dateColor }}>
+                {event.date}
+              </span>
             </div>
+            <div className="flex gap-1 my-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="fill-black dark:fill-white size-[1.3rem]"><path d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z"></path></svg>
+              <p style={{ color: styles.descriptionColor }} className="my-auto">{event.location}</p>
+            </div>
+            <h3 className="text-xl" style={{ color: styles.titleColor }}>
+              {event.degree}
+            </h3>
+            {event.subdegree && 
+              <h3 className="text-lg" style={{ color: styles.titleColor }}>
+                {event.subdegree}
+              </h3>
+            }
             <p style={{ color: styles.descriptionColor }} >{event.description}</p>
-            <span className="text-sm" style={{ color: styles.dateColor }}>
-              {event.date}
-            </span>
           </>
         )}
       </div>
@@ -115,17 +125,17 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   );
 };
 
-interface AnimatedTimelineProps {
-  events: TimelineEvent[];
+interface EduAnimatedTimelineProps {
+  events: EduTimelineEvent[];
   className?: string;
-  styles?: Partial<TimelineStyles>;
-  customEventRender?: (event: TimelineEvent) => React.ReactNode;
-  onEventHover?: (event: TimelineEvent | null) => void;
-  onEventClick?: (event: TimelineEvent) => void;
+  styles?: Partial<EduTimelineStyles>;
+  customEventRender?: (event: EduTimelineEvent) => React.ReactNode;
+  onEventHover?: (event: EduTimelineEvent | null) => void;
+  onEventClick?: (event: EduTimelineEvent) => void;
   initialActiveIndex?: number;
 }
 
-const defaultStyles: TimelineStyles = {
+const defaultStyles: EduTimelineStyles = {
   lineColor: "#d1d5db",
   activeLineColor: "#22c55e",
   dotColor: "#d1d5db",
@@ -136,7 +146,7 @@ const defaultStyles: TimelineStyles = {
   dateColor: "inherit",
 };
 
-export function AnimatedTimeline({
+export function EducationAnimatedTimeline({
   events,
   className = "",
   styles: customStyles = {},
@@ -144,7 +154,7 @@ export function AnimatedTimeline({
   onEventHover,
   onEventClick,
   initialActiveIndex,
-}: AnimatedTimelineProps) {
+}: EduAnimatedTimelineProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(initialActiveIndex ?? null);
   const styles = { ...defaultStyles, ...customStyles };
 
@@ -157,7 +167,7 @@ export function AnimatedTimeline({
     <div className={`relative py-4 ${className}`}>
       {events.map((event, index) => (
         <div key={event.id} onClick={() => onEventClick?.(event)}>
-          <TimelineItem
+          <EduTimelineItem
             event={event}
             isActive={activeIndex !== null && index >= activeIndex}
             isFirst={index === 0}
@@ -170,55 +180,6 @@ export function AnimatedTimeline({
           />
         </div>
       ))}
-    </div>
-  );
-}
-
-interface AnimatedTimelinePageProps {
-  events?: TimelineEvent[];
-  title?: string;
-  containerClassName?: string;
-  timelineStyles?: Partial<TimelineStyles>;
-  customEventRender?: (events: TimelineEvent) => React.ReactNode;
-  onEventHover?: (events: TimelineEvent | null) => void;
-  onEventClick?: (events: TimelineEvent) => void;
-  initialActiveIndex?: number;
-}
-
-export default function AnimatedTimelinePage({
-  events,
-  title,
-  containerClassName,
-  timelineStyles,
-  customEventRender,
-  onEventHover,
-  onEventClick,
-  initialActiveIndex,
-}: AnimatedTimelinePageProps) {
-  const DefaultEvents = [
-    { id: "1", title: "Event 1", description: "Description 1", date: "2023-01-01" },
-    { id: "2", title: "Event 2", description: "Description 2", date: "2023-02-01" },
-    { id: "3", title: "Event 3", description: "Description 3", date: "2023-03-01" },
-  ];
-  const defaultTitle = "Timeline";
-
-  return (
-    <div
-      className={cn(
-        "container mx-auto rounded-lg bg-background px-8 pt-6 text-foreground",
-        containerClassName,
-      )}
-    >
-      <h1 className="text-2xl font-bold">{title || defaultTitle}</h1>
-      <AnimatedTimeline
-        events={events || DefaultEvents}
-        className="max-w-2xl"
-        styles={timelineStyles}
-        customEventRender={customEventRender}
-        onEventHover={onEventHover}
-        onEventClick={onEventClick}
-        initialActiveIndex={initialActiveIndex}
-      />
     </div>
   );
 }

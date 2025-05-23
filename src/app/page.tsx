@@ -7,6 +7,7 @@ import ExperienceBlock from "@/components/experience_block";
 import Footer from "@/components/footer";
 import MenuAnimation from "@/components/animata/list/menu-animation";
 import CertsBlock from "@/components/certs_block";
+import EducationBlock from "@/components/education_block";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
@@ -23,9 +24,10 @@ export default function Home() {
             menuItems={[
               <p key="menu-1" onClick={() => scrollToSection("home")}>Home</p>,
               <p key="menu-2" onClick={() => scrollToSection("about-section")}>About</p>,
-              <p key="menu-3" onClick={() => scrollToSection("project-section")}>Projects</p>,
-              <p key="menu-4" onClick={() => scrollToSection("experience-section")}>Experience</p>,
-              <p key="menu-5" onClick={() => scrollToSection("certifications-section")}>Certifications</p>
+              <p key="menu-3" onClick={() => scrollToSection("education-section")}>Education</p>,
+              <p key="menu-4" onClick={() => scrollToSection("project-section")}>Projects</p>,
+              <p key="menu-5" onClick={() => scrollToSection("experience-section")}>Experience</p>,
+              <p key="menu-6" onClick={() => scrollToSection("certifications-section")}>Certifications</p>
             ]}
         />
         </div>
@@ -33,16 +35,19 @@ export default function Home() {
       <div id="about-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <AboutBlock />
       </div>
-      <div id="project-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
+      <div id="education-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
+        <EducationBlock />
+      </div>
+      <div id="project-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <ProjectBlock />
       </div>
-      <div id="experience-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
+      <div id="experience-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
         <ExperienceBlock />
       </div>
-      <div id="certifications-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
+      <div id="certifications-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <CertsBlock />
       </div>
-      <div id="footer" className="bg-blue-200 dark:bg-gray-900/80 max-w-full">
+      <div id="footer" className="bg-orange-200 dark:bg-purple-800/80 max-w-full">
         <Footer />
       </div>
     </div>

@@ -11,7 +11,7 @@ interface FlipTextCardProps {
 
 export default function ProjectSwapTextCard({ initialText, finalText, projectObj }: FlipTextCardProps) {
   return (
-    <div className={`relative group flex min-h-64 w-full flex-col justify-between rounded-3xl bg-white/10 dark:bg-black/10 border-2 border-black p-6 mt-5 md:max-w-[500px] hover:scale-105 transition duration-100 ${projectObj.base_className} overflow-hidden`}>
+    <div className={`relative group flex min-h-64 w-full flex-col justify-between rounded-3xl bg-white/10 dark:bg-black/10 border-2 border-black p-6 mt-5 md:max-w-[500px] hover:scale-105 transition duration-100 ${projectObj.base_className} overflow-hidden shadow-2xl`}>
       <a className="absolute w-full h-full" href={projectObj.href} ></a>
       {projectObj.legacy &&
         <div className="absolute -left-14 top-7 -rotate-45 bg-yellow-500 w-50 text-center text-black">

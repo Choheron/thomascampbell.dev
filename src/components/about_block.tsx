@@ -1,8 +1,8 @@
 export default function AboutBlock() {
   const aboutMeText = `	
 	  I'm <b>Thomas Campbell</b>, a <i>Site Reliability Engineer/Developer</i> based in Austin, TX. With a professional passion for Creation, Automation,
-		CI/CD, Agile Methodologies, and all things DevOps. I strive to constantly improve and learn! Finding satisfaction in enhancing my skills, I am dedicated to creating functional, 
-    practical, and scaleable systems/content.
+		CI/CD, Agile Methodologies, and all things DevOps. Finding satisfaction in enhancing my skills, I am dedicated to creating functional, 
+    practical, and scaleable systems/content. I am always looking for ways to improve my knowledge and grow my skillset.
 		<br/><br/>
 		I have focused my career on Kubernetes, Cloud Providers/Infrastructure, Automation, Software Development, and Reliability. I am driven by a desire to reduce unnecessary work through scripting, automation, and self-healing systems.
 		<br/><br/>
