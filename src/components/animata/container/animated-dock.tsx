@@ -173,6 +173,7 @@ const SmallDock = ({
       <button
         onClick={() => setIsOpen(!isOpen)} // Toggle isOpen state on click
         className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-black shadow-md backdrop-blur-md dark:bg-black/20 dark:text-white"
+        aria-label="Link dock button"
       >
         {/* Render the appropriate icon based on open/close state */}
         {isOpen ? (
