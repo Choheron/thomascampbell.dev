@@ -20,7 +20,7 @@ export default function ProjectBlock() {
   const projects: Project[] = [
     { 
       title: "CordPal",
-      logo: <img className="w-25" src="/images/projects/cordpal.png" />,
+      logo: <img loading="lazy" className="w-25" src="/images/projects/cordpal.png" />,
       description: "CordPal is a website created with the intention of extending the social connections Discord can provide. CordPal allows users to record quotes, submit photoshops, and participate in Album Of The Day!",
       href: "https://www.cordpal.app/",
       legacy: false,
@@ -42,7 +42,7 @@ export default function ProjectBlock() {
     },
     { 
       title: "InvenPro",
-      logo: <img className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" />,
+      logo: <img loading="lazy" className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" />,
       description: "InvenPro was created as a beta test inventory program for a land surveying company. Built this for the company I worked for in college.",
       href: "https://github.com/Choheron/InvenPro",
       legacy: true,
