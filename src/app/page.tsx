@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto w-full text-black dark:text-white">
-      <div id="home" className="relative bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] content-center">
+      <div id="home" className="relative bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] sm:content-center">
         <IntroBlock />
         <div className="absolute bottom-10">
           <MenuAnimation
@@ -30,19 +30,19 @@ export default function Home() {
         />
         </div>
       </div>
-      <div id="about-section" className="bg-blue-400 dark:bg-gray-900/80 max-w-full py-5">
+      <div id="about-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <AboutBlock />
       </div>
-      <div id="project-section" className="bg-white dark:bg-purple-800/80 max-w-full py-5">
+      <div id="project-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
         <ProjectBlock />
       </div>
-      <div id="experience-section" className="bg-blue-400 dark:bg-gray-900/80 max-w-full py-5">
+      <div id="experience-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <ExperienceBlock />
       </div>
-      <div id="certifications-section" className="bg-white dark:bg-purple-800/80 max-w-full py-5">
+      <div id="certifications-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
         <CertsBlock />
       </div>
-      <div id="footer" className="bg-blue-400 dark:bg-gray-900/80 max-w-full">
+      <div id="footer" className="bg-blue-200 dark:bg-gray-900/80 max-w-full">
         <Footer />
       </div>
     </div>
