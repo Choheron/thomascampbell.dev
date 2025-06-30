@@ -20,7 +20,7 @@ export default function ProjectBlock() {
   const projects: Project[] = [
     { 
       title: "CordPal",
-      logo: <img loading="lazy" className="w-25" src="/images/projects/cordpal.png" />,
+      logo: <img loading="lazy" className="w-full mt-5" src="/images/projects/CordPal_Logo_Large_V1.svg" />,
       description: "CordPal is a website created with the intention of extending the social connections Discord can provide. CordPal allows users to record quotes, submit photoshops, and participate in Album Of The Day!",
       href: "https://www.cordpal.app/",
       legacy: false,
