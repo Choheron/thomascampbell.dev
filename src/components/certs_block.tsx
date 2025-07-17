@@ -11,7 +11,7 @@ export default function CertsBlock() {
           <img loading="lazy" className="size-50 hover:scale-110 transition duration-200" src={`/images/certs/OCI25GAIOCP.png`} alt="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional" />
         </a>
         <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=14BAFD5FBDB517EB5679984B9A93A5C55A1ED008A66CC02A4FC1386759A31EB2" target="_blank" rel="noreferrer noopener" title="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate">
-          <img loading="lazy" className="size-50 hover:scale-110 transition duration-200" src={`/images/certs/AWS_ASA_BADGE.png`} alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate" />
+          <img loading="lazy" className="size-50 hover:scale-110 transition duration-200" src={`/images/certs/OCI25AICFA.png`} alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate" />
         </a>
         <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=1DC22C1B096A4FD2042A03CCF369EC9E729B222C3A1A67A6819F17F792894238" target="_blank" rel="noreferrer noopener" title="Oracle Cloud Infrastructure 2024 Foundations Associate Certification">
           <img loading="lazy" className="size-50 hover:scale-110 transition duration-200" src={`/images/certs/OCI2024FNDCFA_BADGE.png`} alt="Oracle Cloud Infrastructure 2024 Foundations Associate Certification Badge" />
