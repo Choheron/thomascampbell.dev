@@ -37,14 +37,14 @@ export default function Home() {
       <div id="about-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <AboutBlock />
       </div>
-      <div id="education-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
-        <EducationBlock />
-      </div>
-      <div id="project-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
+      <div id="project-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
         <ProjectBlock />
       </div>
-      <div id="experience-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
+      <div id="experience-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <ExperienceBlock />
+      </div>
+      <div id="education-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
+        <EducationBlock />
       </div>
       <div id="certifications-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
         <CertsBlock />
