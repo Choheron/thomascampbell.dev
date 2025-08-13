@@ -13,7 +13,7 @@ export default function ExperienceBlock() {
     { 
       id: "2", 
       title: "DevOps Engineer",
-      description: "Devops Engineer focusing on Governmental Contracts. Working with cutting edge technologies to facilitate proper CI/CD and Agile Design Principals. Implements, Develops, and maintains CI/CD pipelines using Jenkins, Docker, and Kubernetes/Helm to automate the build, test, and deployment processes. Participates in daily stand-ups and on call rotations to swiftly address and resolve incidents with minimal downtime.", 
+      description: "Devops Engineer focused on government contracts, specifically with United States Citizenship and Immigration Services (USCIS). Worked with cutting-edge technologies to facilitate proper CI/CD and Agile design principles. Implemented, developed, and maintained CI/CD pipelines using Jenkins, Docker, and Kubernetes/Helm to automate the build, test, and deployment processes. Participated in daily stand-ups and on-call rotations to swiftly address and resolve incidents with minimal downtime. Received recognition as 'Rookie of the Year' for efforts and results provided on the contract.",
       company: "INADEV",
       location: "Remote, USA",
       date: "December 2022 - September 2024"
@@ -21,7 +21,7 @@ export default function ExperienceBlock() {
     { 
       id: "3", 
       title: "Full Stack Dev/DevOps Intern",
-      description: "Deveoped a deduplication script using Python, utilizing libraries such as numpy and recordlinkage. Worked to optimize algorithms and adapt to changing project requirements. Trained in DevOps to company standards in Terraform, AWS, Docker, Kubernetes, etc. to prepare for a transition to a full time DevOps Engineer.", 
+      description: "Developed a deduplication script using Python, utilizing libraries such as numpy and recordlinkage. Worked to optimize algorithms and adapt to changing project requirements. Trained in DevOps to company standards in Terraform, AWS, Docker, Kubernetes, etc. to prepare for a transition to a full time DevOps Engineer.", 
       company: "INADEV",
       location: "McLean, VA",
       date: "June 2022 - December 2022"
