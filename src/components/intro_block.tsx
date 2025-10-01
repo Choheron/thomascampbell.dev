@@ -38,7 +38,7 @@ export default function IntroBlock() {
         <div className="py-20">
           <Headshot />
         </div>
-        <p className="text-sm sm:text-base font-bold pl-4">Hello, my name is</p>
+        <p className="text-sm sm:text-base font-bold pl-4">Hello! I'm</p>
         <WaveReveal
           className={`${BRFont.className} text-[2rem] md:text-[4rem] mx-auto w-fit -my-3 text-white`}
           mode="word"
