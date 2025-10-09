@@ -22,6 +22,7 @@ export default function Headshot() {
     <div className="relative shrink-0 mx-auto w-fit">
       <img 
         src="/images/headshot/ThomasHeadshotRightsize.webp" 
+        alt="Thomas Campbell, Site Reliability Engineer"
         className="rounded-full border-2 border-black hover:border-blue-500 transition-colors duration-300 ease-in-out"
         width={250}
         height={250}

@@ -30,7 +30,7 @@ export default function CertsBlock() {
         {certObjs.sort(certSort).map((obj, index) => {
           return (
             <a key={index} href={obj.link} target="_blank" rel="noreferrer noopener" title={obj.title}>
-              <img loading="lazy" className="size-50 hover:scale-110 transition duration-200" src={obj.img_src} alt={obj.title + " Badge"} />
+              <img loading="lazy" className="size-25 m-2 lg:size-50 hover:scale-110 transition duration-200" src={obj.img_src} alt={obj.title + " Badge"} />
             </a>
           )
         })}

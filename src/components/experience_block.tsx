@@ -6,7 +6,7 @@ export default function ExperienceBlock() {
       id: "1", 
       title: "Site Reliability Developer",
       company: "Oracle",
-      location: "Hybrid - Austin, TX",
+      location: "Austin, TX - Hybrid",
       description: "Site Reliability Developer with Oracle Cloud Infrastructure working on the Oracle Kubernetes Engine (OKE). Responsibilities include work Organizing and Conducting Deployments, Region Buildout/Expansions, Incident Response, etc. Focusing on developing automation, tools, and scalable solutions that ensure the high availability, performance, and resilience of OKE", 
       date: "October 2024 - Present"
     },
@@ -23,7 +23,7 @@ export default function ExperienceBlock() {
       title: "Full Stack Dev/DevOps Intern",
       description: "Developed a deduplication script using Python, utilizing libraries such as numpy and recordlinkage. Worked to optimize algorithms and adapt to changing project requirements. Trained in DevOps to company standards in Terraform, AWS, Docker, Kubernetes, etc. to prepare for a transition to a full time DevOps Engineer.", 
       company: "INADEV",
-      location: "McLean, VA",
+      location: "McLean, VA - Hybrid",
       date: "June 2022 - December 2022"
     },
   ]

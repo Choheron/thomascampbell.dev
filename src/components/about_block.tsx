@@ -1,13 +1,11 @@
 export default function AboutBlock() {
   const aboutMeText = `	
-	  I'm <b>Thomas Campbell</b>, a <i>Site Reliability Engineer/Developer</i> based in Austin, TX. I have a passion for Creation, Automation, CI/CD, Agile Methodologies, and all things DevOps. 
-    Finding satisfaction in enhancing my skills, I am dedicated to creating functional, practical, and scaleable systems/content. I am always looking for ways to improve my knowledge and grow my skillset.
-		<br/><br/>
-		I have focused my career on Kubernetes, Cloud Providers/Infrastructure, Automation, Software Development, and High Availability/Reliability. I am driven by a desire to reduce unnecessary work through scripting, automation, 
-    and self-healing systems.
-		<br/><br/>
-		In my free time I keep busy maintaining a homelab, hiking, climbing, camping, coding personal projects, woodworking, tending to my animals, and playing games.
-    <br/><br/>
+	  <b>Thomas Campbell</b>, a <i>Site Reliability Engineer</i> based in Austin, TX, currently working on the <b>Oracle Kubernetes Engine</b>. I specialize in building and maintaining highly available, scalable, and automated systems that enable teams to deliver software efficiently and reliably.
+    <br><br>
+    My professional focus lies in <b>Kubernetes</b>, <b>Cloud Infrastructure</b>, <b>Automation</b>, and <b>Software Development</b>. I am guided by a commitment to reliability, performance, and continuous improvement. I am passionate about reducing unnecessary manual work through scripting, intelligent automation, and self-healing systems, helping organizations move faster with confidence. 
+    I continuously seek new ways to refine my craft and expand my technical expertise.
+    <br><br>
+    Outside of work, I enjoy maintaining my homelab, hiking, climbing, camping, building personal projects, woodworking, caring for my animals, and gaming.
 	`
 
 
