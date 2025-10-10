@@ -25,31 +25,33 @@ export default function Home() {
   };
 
   return (
-    <div className="mx-auto w-full text-black dark:text-white overflow-x-hidden">
-      <div id="home" className="relative bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] sm:content-center">
+    <div className="mx-auto text-black dark:text-white overflow-x-hidden bg-fixed bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] w-full">
+      <div id="home" className="relative h-[100vh] sm:content-center">
         <IntroBlock />
-        <div className="absolute bottom-10">
+        <div className="absolute bottom-10 w-full">
           <MenuAnimation
             menuItems={menuItems}
         />
         </div>
       </div>
-      <div id="about-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
-        <AboutBlock />
+      <div className="max-w-full lg:w-3/4 mx-auto flex flex-col lg:gap-2 pb-10">
+        <div id="about-section" className="bg-blue-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+          <AboutBlock />
+        </div>
+        <div id="experience-section" className="bg-orange-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+          <ExperienceBlock />
+        </div>
+        <div id="project-section" className="bg-blue-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+          <ProjectBlock />
+        </div>
+        <div id="education-section" className="bg-orange-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+          <EducationBlock />
+        </div>
+        <div id="certifications-section" className="bg-blue-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+          <CertsBlock />
+        </div>
       </div>
-      <div id="experience-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
-        <ExperienceBlock />
-      </div>
-      <div id="project-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
-        <ProjectBlock />
-      </div>
-      <div id="education-section" className="bg-orange-200 dark:bg-purple-800/80 max-w-full py-5">
-        <EducationBlock />
-      </div>
-      <div id="certifications-section" className="bg-blue-200 dark:bg-gray-900/80 max-w-full py-5">
-        <CertsBlock />
-      </div>
-      <div id="footer" className="bg-orange-200 dark:bg-purple-800/80 max-w-full">
+      <div id="footer" className="bg-orange-200 dark:bg-gray-900/90 max-w-full">
         <Footer />
       </div>
     </div>
