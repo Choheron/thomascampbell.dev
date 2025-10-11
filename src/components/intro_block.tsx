@@ -51,7 +51,7 @@ export default function IntroBlock() {
             })}
           </Marquee>
         </div>
-        <div className="absolute right-5 sm:relative w-fit mx-auto pt-2">
+        <div className="absolute sm:relative w-fit mx-auto pt-2">
           <AnimatedDock 
             items={dockLinks} 
             largeClassName="max-w-lg"

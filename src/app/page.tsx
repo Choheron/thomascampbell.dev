@@ -35,19 +35,19 @@ export default function Home() {
         </div>
       </div>
       <div className="max-w-full lg:w-3/4 mx-auto flex flex-col lg:gap-2 pb-10">
-        <div id="about-section" className="bg-blue-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+        <div id="about-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <AboutBlock />
         </div>
-        <div id="experience-section" className="bg-orange-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+        <div id="experience-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <ExperienceBlock />
         </div>
-        <div id="project-section" className="bg-blue-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+        <div id="project-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <ProjectBlock />
         </div>
-        <div id="education-section" className="bg-orange-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+        <div id="education-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <EducationBlock />
         </div>
-        <div id="certifications-section" className="bg-blue-200 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
+        <div id="certifications-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <CertsBlock />
         </div>
       </div>
