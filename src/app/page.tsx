@@ -51,7 +51,7 @@ export default function Home() {
           <CertsBlock />
         </div>
       </div>
-      <div id="footer" className="bg-gray-900/90 dark:bg-gray-900/90 max-w-full">
+      <div id="footer" className="bg-white/90 dark:bg-gray-900/90 max-w-full">
         <Footer />
       </div>
     </div>
