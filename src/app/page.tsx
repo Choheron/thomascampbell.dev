@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import MenuAnimation from "@/components/animata/list/menu-animation";
 import CertsBlock from "@/components/certs_block";
 import EducationBlock from "@/components/education_block";
+import SkillsBlock from "@/components/skills_block";
 
 export default function Home() {
   const menuItems = [
@@ -34,7 +35,7 @@ export default function Home() {
         />
         </div>
       </div>
-      <div className="max-w-full lg:w-3/4 mx-auto flex flex-col lg:gap-2 pb-10">
+      <div className="max-w-full lg:w-7/8 2xl:w-3/4 mx-auto flex flex-col lg:gap-2 pb-10">
         <div id="about-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <AboutBlock />
         </div>
@@ -44,8 +45,13 @@ export default function Home() {
         <div id="project-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <ProjectBlock />
         </div>
-        <div id="education-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
-          <EducationBlock />
+        <div id="education-section" className="flex gap-2">
+          <div className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl w-full">
+            <EducationBlock />
+          </div>
+          <div className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl w-full">
+            <SkillsBlock />
+          </div>
         </div>
         <div id="certifications-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <CertsBlock />

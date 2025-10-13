@@ -4,6 +4,9 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        '3xl': "1730px"
+      },
       colors: {
         foreground: "hsl(var(--foreground))",
       },
