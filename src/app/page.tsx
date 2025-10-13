@@ -29,7 +29,7 @@ export default function Home() {
     <div className="mx-auto text-black dark:text-white overflow-x-hidden bg-fixed bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] w-full">
       <div id="home" className="relative h-[100vh] sm:content-center">
         <IntroBlock />
-        <div className="absolute bottom-10 w-full">
+        <div className="absolute bottom-1 md:top-1 right-5 w-1/2 h-fit">
           <MenuAnimation
             menuItems={menuItems}
         />

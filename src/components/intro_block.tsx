@@ -45,7 +45,9 @@ export default function IntroBlock() {
           text="Thomas Campbell"
         />
         <div className="relative flex h-fit w-full max-w-full items-center justify-center overflow-hidden rounded text-lg">
-          <Marquee pauseOnHover>
+          <Marquee 
+            pauseOnHover={true}
+          >
             {titles.map((title) => {
               return(title)
             })}

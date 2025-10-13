@@ -53,8 +53,8 @@ export default function SkillsBlock() {
               {
                 obj.skills.sort(skillSort).map((skill, skillIndex) => {
                   return (
-                    <div className="relative group transition-all">
-                      <p key={skillIndex} className="ml-2 z-0">{skill.title}</p>
+                    <div key={`skill-${skillIndex}`} className="relative group transition-all">
+                      <p className="ml-2 z-0">{skill.title}</p>
                       <div className="absolute top-0 transition-all invisible group-hover:visible opacity-0 group-hover:opacity-100 z-50">
                         {(skill.hoverText != "") ? (
                           <div className="bg-gray-900 border border-black rounded-2xl p-2">
