@@ -9,7 +9,7 @@ export default function SkillsBlock() {
       category: "DevOps/SRE",
       skills: 
         [
-          { title: "Kubernetes", hoverText: "Extensive experience with Kubenrnetes as both a User-Developer-Administrator, and a Cloud Service Provider (OKE Site Reliability Engineer)" },
+          { title: "Kubernetes", hoverText: "Extensive experience with Kubenrnetes as both a User/Developer/Administrator, and a Cloud Service Provider (OKE Site Reliability Engineer)" },
           { title: "CI/CD", hoverText: "Experience with Jenkins, Github Actions, Shell Scripting, Python Scripting, Ansible, and managing large scale releases." },
           { title: "Infrastructure as Code", hoverText: "Well versed in Terraform and Cloudformation for regular infra creation and cleanup." },
           { title: "Highly Available Applications", hoverText: "Expertise in building, deploying, and scaling highly available apps serving millions of customers daily." },
@@ -60,7 +60,7 @@ export default function SkillsBlock() {
                           <div className="bg-gray-900 border border-black rounded-2xl p-2">
                           <p className="text-lg">{skill.title}</p>
                           <hr></hr>
-                          <p className="min-w-[300px]">{skill.hoverText}</p>
+                          <p className="min-w-[300px] text-sm">{skill.hoverText}</p>
                         </div>
                         ) : (
                           <></>
