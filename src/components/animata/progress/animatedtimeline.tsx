@@ -34,6 +34,7 @@ interface TimelineStyles {
   activeDotColor: string;
   dotSize: string;
   titleColor: string;
+  subtitleColor: string;
   descriptionColor: string;
   dateColor: string;
 }
@@ -91,23 +92,25 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           transition={{ duration: fillDuration, delay: fillDelay }}
         />
       </div>
-      <div className={cn("group flex-grow leading-5", !isLast && "mb-3")}>
+      <div className={cn("group grow leading-5", !isLast && "mb-3")}>
         {customRender ? (
           customRender(event)
         ) : (
           <>
-            <h3 className="text-xl font-semibold group-hover:underline -mt-1" style={{ color: styles.titleColor }}>
-              {event.title}
-            </h3>
+            <div className="2xl:flex justify-between">
+              <h3 className="text-xl font-semibold group-hover:underline -mt-1" style={{ color: styles.titleColor }}>
+                {event.title}
+              </h3>
+              <span className="text-sm italic" style={{ color: styles.dateColor }}>
+                {event.date}
+              </span>
+            </div>
             <div className="flex">
               <p style={{ color: styles.descriptionColor }} className="font-bold">{event.company}</p>
               <p style={{ color: styles.descriptionColor }} className="mx-1">{"-"}</p>
               <p style={{ color: styles.descriptionColor }} className="text-sm my-auto"><i>{event.location}</i></p>
             </div>
-            <p style={{ color: styles.descriptionColor }} >{event.description}</p>
-            <span className="text-sm" style={{ color: styles.dateColor }}>
-              {event.date}
-            </span>
+            <p style={{ color: styles.subtitleColor }}>{event.description}</p>
           </>
         )}
       </div>
@@ -132,6 +135,7 @@ const defaultStyles: TimelineStyles = {
   activeDotColor: "#22c55e",
   dotSize: "1.5rem",
   titleColor: "inherit",
+  subtitleColor: "#c9c9c9",
   descriptionColor: "inherit",
   dateColor: "inherit",
 };

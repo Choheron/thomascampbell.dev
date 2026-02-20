@@ -26,8 +26,8 @@ export default function Home() {
   };
 
   return (
-    <div className="mx-auto text-black dark:text-white overflow-x-hidden bg-fixed bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-[100vh] w-full">
-      <div id="home" className="relative h-[100vh] sm:content-center">
+    <div className="mx-auto text-black dark:text-white overflow-x-hidden bg-fixed bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)] bg-center bg-cover h-screen w-full">
+      <div id="home" className="relative h-screen sm:content-center">
         <IntroBlock />
         <div className="absolute bottom-1 md:top-1 right-5 w-1/2 h-fit">
           <MenuAnimation
@@ -35,17 +35,19 @@ export default function Home() {
         />
         </div>
       </div>
-      <div className="max-w-full lg:w-7/8 2xl:w-3/4 mx-auto flex flex-col lg:gap-2 pb-10">
+      <div className="max-w-full lg:w-7/8 2xl:w-3/4 mx-auto flex flex-col gap-2 pb-10">
         <div id="about-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
           <AboutBlock />
         </div>
-        <div id="experience-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
-          <ExperienceBlock />
+        <div className="flex flex-col lg:flex-row gap-2 w-full">
+          <div id="experience-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl lg:w-1/2">
+            <ExperienceBlock />
+          </div>
+          <div id="project-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl lg:w-1/2">
+            <ProjectBlock />
+          </div>
         </div>
-        <div id="project-section" className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl">
-          <ProjectBlock />
-        </div>
-        <div id="education-section" className="flex gap-2">
+        <div id="education-section" className="flex flex-col lg:flex-row gap-2">
           <div className="bg-white/90 dark:bg-gray-900/90 py-5 lg:rounded-2xl w-full">
             <EducationBlock />
           </div>

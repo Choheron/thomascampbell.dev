@@ -33,7 +33,7 @@ export default function IntroBlock() {
   
 
   return (
-    <div className="relative mx-auto w-full max-w-[800px] h-fit text-white">
+    <div className="relative mx-auto w-full max-w-200 h-fit text-white">
       <div className="max-w-full">
         <div className="py-20">
           <Headshot />
