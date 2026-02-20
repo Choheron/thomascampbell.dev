@@ -25,14 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ShareTechMono.className} relative antialiased bg-white dark:bg-slate-900`}
+        className={`${ShareTechMono.className} relative antialiased`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
         >
-          <div className="absolute top-2 left-2 z-[10000000000]">
+          <div className="absolute top-2 left-2 z-10000000000">
             <ThemeSwitcher />
           </div>
           {children}

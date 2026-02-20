@@ -14,7 +14,7 @@ export default function EducationBlock() {
 
   return (
     <div className="w-full h-fit px-10 py-2 max-w-full">
-      <p className="text-3xl underline pb-2"><b>Education:</b></p>
+      <p className="text-2xl underline pb-2"><b>Education:</b></p>
       <div className="w-full mx-auto">
         <EducationAnimatedTimeline
           events={educationEvents}

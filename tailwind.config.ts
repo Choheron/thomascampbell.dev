@@ -8,7 +8,7 @@ const config: Config = {
         '3xl': "1730px"
       },
       colors: {
-        foreground: "hsl(var(--foreground))",
+        
       },
       transitionTimingFunction: {
         "minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",

@@ -33,14 +33,14 @@ export default function IntroBlock() {
   
 
   return (
-    <div className="relative mx-auto w-full max-w-200 h-fit text-white">
+    <div className="relative mx-auto w-full max-w-200 h-fit">
       <div className="max-w-full">
         <div className="py-20">
           <Headshot />
         </div>
         <p className="text-sm sm:text-base font-bold pl-4">Hello! I'm</p>
         <WaveReveal
-          className={`${BRFont.className} text-[2rem] md:text-[4rem] mx-auto w-fit -my-3 text-white`}
+          className={`${BRFont.className} text-[2rem] md:text-[4rem] mx-auto w-fit -my-3`}
           mode="word"
           text="Thomas Campbell"
         />

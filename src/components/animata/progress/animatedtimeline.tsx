@@ -97,16 +97,14 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           customRender(event)
         ) : (
           <>
-            <div className="2xl:flex justify-between">
-              <h3 className="text-xl font-semibold group-hover:underline -mt-1" style={{ color: styles.titleColor }}>
-                {event.title}
-              </h3>
-              <span className="text-sm italic" style={{ color: styles.dateColor }}>
-                {event.date}
-              </span>
-            </div>
+            <span className="text-sm italic" style={{ color: styles.dateColor }}>
+              {event.date}
+            </span>
+            <p className="text-lg font-semibold group-hover:underline -mt-1" style={{ color: styles.titleColor }}>
+              {event.title}
+            </p>
             <div className="flex">
-              <p style={{ color: styles.descriptionColor }} className="font-bold">{event.company}</p>
+              <p style={{ color: styles.descriptionColor }} className="text-md font-bold">{event.company}</p>
               <p style={{ color: styles.descriptionColor }} className="mx-1">{"-"}</p>
               <p style={{ color: styles.descriptionColor }} className="text-sm my-auto"><i>{event.location}</i></p>
             </div>

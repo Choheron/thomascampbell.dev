@@ -1,23 +1,29 @@
 @import "tailwindcss";
 @config "../../tailwind.config.ts";
 
+/* Lightmode Defaults */
 :root {
-  --background: #ffffff;
+  --background: #FFFFFA;
+  --bg-accent: #FFFFE0;
   --foreground: #171717;
+  --fg-accent: #62929E;
 }
 
-@theme inline {
+/* Darkmode Defaults */
+.dark {
+  --background: #111817;
+  --bg-accent: #1B241F;
+  --foreground: #F6F6F4;
+  --fg-accent: #04521C;
+}
+
+@theme static {
   --color-background: var(--background);
+  --color-bg-accent: var(--bg-accent);
   --color-foreground: var(--foreground);
+  --color-fg-accent: var(--fg-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: rgb(15 23 42);
-    --foreground: #ededed;
-  }
 }
 
 body {

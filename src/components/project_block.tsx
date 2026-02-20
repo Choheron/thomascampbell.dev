@@ -29,7 +29,7 @@ export default function ProjectBlock() {
     { 
       title: "ThisWebsiteDoesNothing.com",
       logo: (
-        <div className={`${bebas.className} text-base pt-8 text-dark dark:text-white select-none`}>
+        <div className={`${bebas.className} text-base pt-8 select-none`}>
           <p>Well...</p>
           <p className="text-3xl -my-2">What did you expect?</p>
           <p className="text-right">...Something?</p>
@@ -43,7 +43,7 @@ export default function ProjectBlock() {
     { 
       title: "InvenPro",
       logo: <img loading="lazy" className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" />,
-      description: "InvenPro was created as a beta test inventory program for a land surveying company. Built this for the company I worked for in college.",
+      description: "InvenPro is a legacy, pre-alpha inventory program developed for a Land Surveying firm.",
       href: "https://github.com/Choheron/InvenPro",
       legacy: true,
       base_className: "",
@@ -51,8 +51,8 @@ export default function ProjectBlock() {
   ]
 
   return (
-    <div id="project-section" className="w-full h-fit px-10 py-2 max-w-full text-xl">
-      <p className="text-3xl underline pb-2">Projects:</p>
+    <div id="project-section" className="w-full h-fit px-10 py-2 max-w-full">
+      <p className="text-2xl underline pb-2">Projects:</p>
       <p>I am constantly looking to create new things and learn new technologies, be it personal projects or testing ideas. I&apos;m always working on something new! You can see my projects below.</p>
       <div className="flex flex-wrap justify-around w-full">
         {projects.map((project, index) => {

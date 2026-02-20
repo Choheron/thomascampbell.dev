@@ -35,12 +35,12 @@ export default function CertsBlock() {
 
   return (
     <div className="w-full h-fit px-10 py-2 max-w-full">
-      <p className="text-3xl underline pb-2"><b>Certifications:</b></p>
+      <p className="text-2xl underline pb-2"><b>Certifications:</b></p>
       <div className="w-full mx-auto flex flex-wrap justify-around py-10">
         {certObjs.sort(certSort).map((obj, index) => {
           return (
             <a key={index} href={obj.link} target="_blank" rel="noreferrer noopener" title={obj.title} className="group">
-              <img loading="lazy" className="size-25 m-2 lg:size-50 hover:scale-110 transition-all duration-200" src={obj.img_src} alt={obj.title + " Badge"} />
+              <img loading="lazy" className="size-24 m-2 lg:size-36 hover:scale-110 transition-all duration-200" src={obj.img_src} alt={obj.title + " Badge"} />
               <p className="text-center mt-2 opacity-0 group-hover:opacity-100 transition-all duration-200">Issued: {certToIssueDate(obj)}</p>
             </a>
           )

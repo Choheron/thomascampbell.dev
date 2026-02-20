@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
 
 
   return mount ? (
-    <div className="z-[10000000000] max-lg:bottom-2.5 lg:top-1/3">
+    <div className="z-10000000000 max-lg:bottom-2.5 lg:top-1/3">
       <button
         onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
         type="button"

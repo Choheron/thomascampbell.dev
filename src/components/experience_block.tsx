@@ -7,13 +7,13 @@ export default function ExperienceBlock() {
       title: "Site Reliability Developer",
       company: "Oracle",
       location: "Austin, TX - Hybrid",
-      description: "Site Reliability Developer with Oracle Cloud Infrastructure working on the Oracle Kubernetes Engine (OKE). Responsibilities include work Organizing and Conducting Deployments, Region Buildout/Expansions, Incident Response, etc. Focusing on developing automation, tools, and scalable solutions that ensure the high availability, performance, and resilience of OKE", 
+      // description: "Site Reliability Developer with Oracle Cloud Infrastructure working on the Oracle Kubernetes Engine (OKE). Responsibilities include work Organizing and Conducting Deployments, Region Buildout/Expansions, Incident Response, etc. Focusing on developing automation, tools, and scalable solutions that ensure the high availability, performance, and resilience of OKE", 
       date: "October 2024 - Present"
     },
     { 
       id: "2", 
       title: "DevOps Engineer",
-      description: "Devops Engineer focused on government contracts, specifically with United States Citizenship and Immigration Services (USCIS). Worked with cutting-edge technologies to facilitate proper CI/CD and Agile design principles. Implemented, developed, and maintained CI/CD pipelines using Jenkins, Docker, and Kubernetes/Helm to automate the build, test, and deployment processes. Participated in daily stand-ups and on-call rotations to swiftly address and resolve incidents with minimal downtime. Received recognition as 'Rookie of the Year' for efforts and results provided on the contract.",
+      // description: "Devops Engineer focused on government contracts, specifically with United States Citizenship and Immigration Services (USCIS). Worked with cutting-edge technologies to facilitate proper CI/CD and Agile design principles. Implemented, developed, and maintained CI/CD pipelines using Jenkins, Docker, and Kubernetes/Helm to automate the build, test, and deployment processes. Participated in daily stand-ups and on-call rotations to swiftly address and resolve incidents with minimal downtime. Received recognition as 'Rookie of the Year' for efforts and results provided on the contract.",
       company: "INADEV",
       location: "Remote, USA",
       date: "December 2022 - September 2024"
@@ -21,7 +21,7 @@ export default function ExperienceBlock() {
     { 
       id: "3", 
       title: "Full Stack Dev/DevOps Intern",
-      description: "Developed a deduplication script using Python, utilizing libraries such as numpy and recordlinkage. Worked to optimize algorithms and adapt to changing project requirements. Trained in DevOps to company standards in Terraform, AWS, Docker, Kubernetes, etc. to prepare for a transition to a full time DevOps Engineer.", 
+      // description: "Developed a deduplication script using Python, utilizing libraries such as numpy and recordlinkage. Worked to optimize algorithms and adapt to changing project requirements. Trained in DevOps to company standards in Terraform, AWS, Docker, Kubernetes, etc. to prepare for a transition to a full time DevOps Engineer.", 
       company: "INADEV",
       location: "McLean, VA - Hybrid",
       date: "June 2022 - December 2022"
@@ -30,7 +30,7 @@ export default function ExperienceBlock() {
 
   return (
     <div className="w-full h-fit px-10 py-2 max-w-full">
-      <p className="text-3xl underline pb-2"><b>Experience:</b></p>
+      <p className="text-2xl underline pb-2"><b>Experience:</b></p>
       <div className="w-full mx-auto">
         <AnimatedTimeline
           events={employmentEvents}
