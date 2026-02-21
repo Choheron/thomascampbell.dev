@@ -57,7 +57,7 @@ export default function SkillsBlock() {
                       <p className="ml-2 z-0">{skill.title}</p>
                       <div className="absolute top-0 transition-all invisible group-hover:visible opacity-0 group-hover:opacity-100 z-50">
                         {(skill.hoverText != "") ? (
-                          <div className="bg-background border border-black rounded-2xl p-2">
+                          <div className="bg-background border border-black rounded-2xl p-2 z-100">
                           <p className="text-lg">{skill.title}</p>
                           <hr></hr>
                           <p className="min-w-[300px] text-sm">{skill.hoverText}</p>

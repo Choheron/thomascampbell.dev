@@ -53,7 +53,7 @@ export default function Home() {
             <div className="py-5 lg:rounded-2xl w-full lg:w-1/2 xl:w-full bg-bg-accent drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
               <EducationBlock />
             </div>
-            <div className="py-5 lg:rounded-2xl w-full lg:w-1/2 xl:w-full bg-bg-accent drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+            <div className="py-5 lg:rounded-2xl w-full lg:w-1/2 xl:w-full bg-bg-accent drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black z-100">
               <SkillsBlock />
             </div>
           </div>
