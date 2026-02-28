@@ -18,9 +18,9 @@
   --bg-accent: #1B241F;
   --foreground: #F6F6F4;
   --fg-accent: #04521C;
-  --blob-teal:  rgba(40, 120, 110, 0.55);
-  --blob-blue:  rgba(30, 70, 120, 0.45);
-  --blob-green: rgba(20, 100, 55, 0.50);
+  --blob-teal:  rgba(40, 120, 110, 0.45);
+  --blob-blue:  rgba(30, 70, 120, 0.35);
+  --blob-green: rgba(20, 100, 55, 0.40);
 }
 
 @theme static {
