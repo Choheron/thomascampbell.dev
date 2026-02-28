@@ -7,6 +7,9 @@
   --bg-accent: #FFFFE0;
   --foreground: #171717;
   --fg-accent: #62929E;
+  --blob-teal:  rgba(180, 220, 230, 0.30);
+  --blob-blue:  rgba(180, 190, 230, 0.25);
+  --blob-green: rgba(180, 230, 210, 0.20);
 }
 
 /* Darkmode Defaults */
@@ -15,6 +18,9 @@
   --bg-accent: #1B241F;
   --foreground: #F6F6F4;
   --fg-accent: #04521C;
+  --blob-teal:  rgba(40, 120, 110, 0.55);
+  --blob-blue:  rgba(30, 70, 120, 0.45);
+  --blob-green: rgba(20, 100, 55, 0.50);
 }
 
 @theme static {
