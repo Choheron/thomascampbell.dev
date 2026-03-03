@@ -27,6 +27,14 @@ export default function ProjectBlock() {
       base_className: ""
     },
     { 
+      title: "OllamTermUI",
+      logo: <img loading="lazy" className="w-3/4 mx-auto -mt-3 rounded-2xl" src="https://github.com/Choheron/OllamaTermUI/blob/main/assets/OllamaTermUI_TitleCard.png?raw=true" />,
+      description: "A textual terminal GUI for basic interaction with Ollama.",
+      href: "https://github.com/Choheron/OllamaTermUI/tree/main",
+      legacy: false,
+      base_className: ""
+    },
+    { 
       title: "ThisWebsiteDoesNothing.com",
       logo: (
         <div className={`${bebas.className} text-base pt-8 select-none`}>
