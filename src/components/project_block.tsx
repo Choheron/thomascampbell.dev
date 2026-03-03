@@ -61,7 +61,7 @@ export default function ProjectBlock() {
   return (
     <div id="project-section" className="w-full h-fit px-10 py-2 max-w-full">
       <p className="text-2xl underline pb-2">Projects:</p>
-      <p>I am constantly looking to create new things and learn new technologies, be it personal projects or testing ideas. I&apos;m always working on something new! You can see my projects below.</p>
+      <p>I&apos;m always working on something new!</p>
       <div className="flex flex-wrap justify-around w-full">
         {projects.map((project, index) => {
           return (

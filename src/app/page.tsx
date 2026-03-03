@@ -8,7 +8,6 @@ import Footer from "@/components/footer";
 import MenuAnimation from "@/components/animata/list/menu-animation";
 import CertsBlock from "@/components/certs_block";
 import EducationBlock from "@/components/education_block";
-import SkillsBlock from "@/components/skills_block";
 import ReactiveBackground from "@/components/reactive_background";
 
 export default function Home() {
@@ -40,26 +39,23 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-full 2xl:w-1/2 mx-auto flex flex-col gap-2 pb-10 xl:w-1/2 xl:p-2 pl-0">
-          <div id="about-section" className="py-5 lg:rounded-2xl bg-bg-accent/60 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+          <div id="about-section" className="py-5 lg:rounded-2xl bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
             <AboutBlock />
           </div>
           <div className="flex flex-col lg:flex-row xl:flex-col gap-2 w-full">
-            <div id="experience-section" className="py-5 lg:rounded-2xl lg:w-1/2 xl:w-full bg-bg-accent/60 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+            <div id="experience-section" className="py-5 lg:rounded-2xl lg:w-1/2 xl:w-full bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
               <ExperienceBlock />
             </div>
-            <div id="project-section" className="py-5 lg:rounded-2xl lg:w-1/2 xl:w-full bg-bg-accent/60 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+            <div id="project-section" className="py-5 lg:rounded-2xl lg:w-1/2 xl:w-full bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
               <ProjectBlock />
             </div>
           </div>
           <div id="education-section" className="flex flex-col lg:flex-row xl:flex-col gap-2">
-            <div className="py-5 lg:rounded-2xl w-full lg:w-1/2 xl:w-full bg-bg-accent/60 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+            <div className="py-5 lg:rounded-2xl w-full lg:w-1/2 xl:w-full bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
               <EducationBlock />
             </div>
-            <div className="py-5 lg:rounded-2xl w-full lg:w-1/2 xl:w-full bg-bg-accent/60 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black z-100">
-              <SkillsBlock />
-            </div>
           </div>
-          <div id="certifications-section" className="py-5 lg:rounded-2xl bg-bg-accent/60 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+          <div id="certifications-section" className="py-5 lg:rounded-2xl bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
             <CertsBlock />
           </div>
         </div>
