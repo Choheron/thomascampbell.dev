@@ -39,11 +39,13 @@ export default function IntroBlock() {
           <Headshot />
         </div>
         <p className="text-sm sm:text-base font-bold pl-4">Hello! I'm</p>
-        <WaveReveal
-          className={`${BRFont.className} text-[2rem] md:text-[3rem] 2xl:text-[4rem] mx-auto w-fit -my-3`}
-          mode="word"
-          text="Thomas Campbell"
-        />
+        <h1>
+          <WaveReveal
+            className={`${BRFont.className} text-[2rem] md:text-[3rem] 2xl:text-[4rem] mx-auto w-fit -my-3`}
+            mode="word"
+            text="Thomas Campbell"
+          />
+        </h1>
         <div className="relative flex h-fit w-full max-w-full items-center justify-center overflow-hidden rounded text-lg">
           <Marquee 
             pauseOnHover={true}

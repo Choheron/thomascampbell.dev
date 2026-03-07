@@ -20,7 +20,7 @@ export default function ProjectBlock() {
   const projects: Project[] = [
     { 
       title: "CordPal",
-      logo: <img loading="lazy" className="w-full mt-5" src="/images/projects/CordPal_Logo_Large_V1.svg" />,
+      logo: <img loading="lazy" className="w-full mt-5" src="/images/projects/CordPal_Logo_Large_V1.svg" alt="CordPal Logo" />,
       description: "CordPal is a website created with the intention of extending the social connections Discord can provide. CordPal allows users to record quotes, submit photoshops, and participate in Album Of The Day!",
       href: "https://www.cordpal.app/",
       legacy: false,
@@ -28,7 +28,7 @@ export default function ProjectBlock() {
     },
     { 
       title: "OllamTermUI",
-      logo: <img loading="lazy" className="w-3/4 mx-auto -mt-3 rounded-2xl" src="https://github.com/Choheron/OllamaTermUI/blob/main/assets/OllamaTermUI_TitleCard.png?raw=true" />,
+      logo: <img loading="lazy" className="w-3/4 mx-auto -mt-3 rounded-2xl" src="https://github.com/Choheron/OllamaTermUI/blob/main/assets/OllamaTermUI_TitleCard.png?raw=true" alt="OllamaTermUI Title Card" />,
       description: "A textual terminal GUI for basic interaction with Ollama.",
       href: "https://github.com/Choheron/OllamaTermUI/tree/main",
       legacy: false,
@@ -50,7 +50,7 @@ export default function ProjectBlock() {
     },
     { 
       title: "InvenPro",
-      logo: <img loading="lazy" className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" />,
+      logo: <img loading="lazy" className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" alt="InvenPro Logo" />,
       description: "InvenPro is a legacy, pre-alpha inventory program developed for a Land Surveying firm.",
       href: "https://github.com/Choheron/InvenPro",
       legacy: true,
@@ -60,7 +60,7 @@ export default function ProjectBlock() {
 
   return (
     <div id="project-section" className="w-full h-fit px-10 py-2 max-w-full">
-      <p className="text-2xl underline pb-2">Projects:</p>
+      <h2 className="text-2xl underline pb-2">Projects:</h2>
       <p>I&apos;m always working on something new!</p>
       <div className="flex flex-wrap justify-around w-full">
         {projects.map((project, index) => {

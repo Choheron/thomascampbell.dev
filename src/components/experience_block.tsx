@@ -30,7 +30,7 @@ export default function ExperienceBlock() {
 
   return (
     <div className="w-full h-fit px-10 py-2 max-w-full">
-      <p className="text-2xl underline pb-2"><b>Experience:</b></p>
+      <h2 className="text-2xl underline pb-2"><b>Experience:</b></h2>
       <div className="w-full mx-auto">
         <AnimatedTimeline
           events={employmentEvents}
