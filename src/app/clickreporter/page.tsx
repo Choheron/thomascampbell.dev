@@ -247,7 +247,6 @@ export default function ClickReporterPage() {
         <Link href="/" className="underline hover:text-foreground/70 transition-colors">
           Thomas Campbell
         </Link>
-        {" · "}Free & Open Source
       </footer>
 
     </div>
