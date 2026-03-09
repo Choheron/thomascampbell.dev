@@ -19,6 +19,14 @@ export type Project = {
 export default function ProjectBlock() {
   const projects: Project[] = [
     { 
+      title: "ClickReporter",
+      logo: <img loading="lazy" className="w-3/5 mx-auto -mt-3 rounded-2xl" src="/images/projects/clickreporter/Logo_Pro_4x3_Transparent.png" alt="CordPal Logo" />,
+      description: "ClickReporter is a browser extension that injects itself into social media platforms, allowing users to configure Discord webhooks to directly send posts and webpages to Discord.",
+      href: "/clickreporter",
+      legacy: false,
+      base_className: ""
+    },
+    { 
       title: "CordPal",
       logo: <img loading="lazy" className="w-full mt-5" src="/images/projects/CordPal_Logo_Large_V1.svg" alt="CordPal Logo" />,
       description: "CordPal is a website created with the intention of extending the social connections Discord can provide. CordPal allows users to record quotes, submit photoshops, and participate in Album Of The Day!",
