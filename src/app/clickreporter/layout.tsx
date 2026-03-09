@@ -3,29 +3,30 @@ import "../globals.css";
 import ThemeProvider from "@/utils/ThemeProvider";
 import ThemeSwitcher from "@/components/theme_switcher";
 
-const siteUrl = "https://thomascampbell.dev/clickreporter";
+const rootUrl = "https://thomascampbell.dev";
+const siteUrl = `${rootUrl}/clickreporter`;
 const siteDescription = "ClickReporter is a browser extension allowing for direct sending of social media posts and websites to a configured Discord Webhook or group of Discord Webhooks.";
-const siteTitle = "ClickRepoter | Monitor Fast";
+const siteTitle = "ClickReporter | Monitor Fast";
 const ogImage = "/images/projects/clickrepoter/Logo_Pro_4x3_Transparent.png";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(rootUrl),
   title: siteTitle,
   description: siteDescription,
-  keywords: "ClickReporter, Discord Webhooks, Discord, Social, Share, Direct to Discord, Webhooks",
-  authors: [{ name: "Thomas Campbell", url: siteUrl }],
+  keywords: "ClickReporter, Discord Webhooks, Discord, Social Share, Share to Discord, Direct to Discord, Webhooks, Browser Extension, Firefox Extension, Chrome Extension, Social Media Monitoring, Reddit, Twitter, YouTube, Instagram",
+  authors: [{ name: "Thomas Campbell", url: rootUrl }],
   icons: {
     icon: '/images/projects/clickrepoter/logos/logo_48.png'
   },
   alternates: {
-    canonical: "/",
+    canonical: "/clickreporter",
   },
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    type: "profile",
+    type: "website",
     url: siteUrl,
     title: siteTitle,
     description: siteDescription,
@@ -65,20 +66,30 @@ export default function RootLayout({
               "@type": "SoftwareApplication",
               name: "ClickReporter",
               url: siteUrl,
-              image: `https://thomascampbell.dev${ogImage}`,
+              image: `${rootUrl}${ogImage}`,
               description: siteDescription,
               applicationCategory: "BrowserApplication",
+              applicationSubCategory: "Browser Extension",
               operatingSystem: "Firefox, Chrome",
+              browserRequirements: "Requires Firefox or Chrome browser",
+              featureList: [
+                "Send social media posts directly to Discord",
+                "Configure multiple Discord Webhooks",
+                "Group webhooks for bulk sharing",
+                "Support for Reddit, Twitter/X, YouTube, Instagram",
+                "One-click sharing from any supported page",
+              ],
               author: {
                 "@type": "Person",
                 name: "Thomas Campbell",
-                url: "https://thomascampbell.dev",
+                url: rootUrl,
                 email: "business@thomascampbell.dev",
               },
               offers: {
                 "@type": "Offer",
                 price: "0",
                 priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
               },
             }),
           }}
