@@ -33,6 +33,12 @@ const features = [
     basic: "❌",
     pro: "Unlimited",
   },
+  {
+    title: "Pricing",
+    description: "Cost of ClickReporter.",
+    basic: "Free",
+    pro: "Single $7 Charge",
+  },
 ]
 
 const supported_socials = [
@@ -157,7 +163,7 @@ export default function ClickReporterPage() {
                 <th className="text-left px-5 py-3 font-semibold text-foreground/70 w-1/4">Feature</th>
                 <th className="text-left px-5 py-3 font-semibold text-foreground/70">Description</th>
                 <th className="text-center px-5 py-3 font-semibold text-foreground/70 w-24">Basic</th>
-                <th className="text-center px-5 py-3 font-semibold text-foreground/70 w-24">Pro</th>
+                <th className="text-center px-5 py-3 font-semibold text-foreground/70 w-24 text-xs">Pro</th>
               </tr>
             </thead>
             <tbody>
