@@ -232,7 +232,7 @@ export default function ClickReporterPage() {
           {[
             { step: "1", title: "Install the extension", body: "Add ClickReporter to Firefox or Chrome from the extension store." },
             { step: "2", title: "Add a Discord webhook", body: "Open the popup and paste in one or more Discord webhook URLs from your server settings." },
-            { step: "3", title: "Right-click & report", body: "Navigate to any supported social media post or any website, utilize the ClickReporter button, and select your desired webhook or group." },
+            { step: "3", title: "Click & report", body: "Navigate to any supported social media post or any website, utilize the ClickReporter button, and select your desired webhook or group." },
           ].map(({ step, title, body }) => (
             <li key={step} className="flex gap-5 items-start">
               <span className="shrink-0 w-9 h-9 rounded-full bg-foreground text-background flex items-center justify-center text-sm font-bold">
