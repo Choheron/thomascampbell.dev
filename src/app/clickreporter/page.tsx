@@ -250,8 +250,12 @@ export default function ClickReporterPage() {
       {/* Footer */}
       <footer className="w-full border-t border-foreground/10 mt-8 py-8 px-8 text-center text-xs text-foreground/40">
         Built by{" "}
-        <Link href="/" className="underline hover:text-foreground/70 transition-colors">
+        <Link href="/" className="underline hover:text-foreground/70 transition-colors mr-1">
           Thomas Campbell
+        </Link>
+        -
+        <Link href={"/clickreporter/privacy-policy"} className="underline hover:text-foreground/70 transition-colors ml-1">
+          Privacy Polivy
         </Link>
       </footer>
 
