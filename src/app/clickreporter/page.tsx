@@ -255,7 +255,7 @@ export default function ClickReporterPage() {
         </Link>
         -
         <Link href={"/clickreporter/privacy-policy"} className="underline hover:text-foreground/70 transition-colors ml-1">
-          Privacy Polivy
+          Privacy Policy
         </Link>
       </footer>
 
