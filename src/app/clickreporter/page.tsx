@@ -123,19 +123,23 @@ export default function ClickReporterPage() {
           A browser extension for sending social media posts and websites directly to your Discord webhooks — in one click.
         </p>
         <div className="flex gap-4 flex-wrap justify-center items-center">
-          <div className="relative flex items-center gap-3 px-5 py-3 rounded-xl border border-foreground/15 bg-bg-accent/40 opacity-60 cursor-not-allowed select-none">
+          <a
+            href="https://chromewebstore.google.com/detail/clickreporter/elmgmogcofihlnbejmajpdgnjjelgpnk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex items-center gap-3 px-5 py-3 rounded-xl border border-foreground/15 bg-bg-accent/40 hover:bg-bg-accent/60 transition-colors"
+          >
             <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.852 0 1.265.64 1.265 1.408 0 .858-.546 2.141-.828 3.33-.236.995.499 1.806 1.48 1.806 1.773 0 3.141-1.872 3.141-4.573 0-2.39-1.718-4.061-4.169-4.061-2.84 0-4.508 2.131-4.508 4.333 0 .858.33 1.776.741 2.28a.3.3 0 0 1 .069.285c-.076.313-.243.995-.276 1.134-.044.183-.146.222-.337.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.966-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.478 10-10S17.522 2 12 2z"/>
+              <path d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A5.454 5.454 0 0 1 12 6.545h10.691A12 12 0 0 0 12 0zM1.931 5.47A11.943 11.943 0 0 0 0 12c0 6.012 4.42 10.991 10.189 11.864l3.953-6.847a5.45 5.45 0 0 1-6.865-2.29zm13.342 2.166a5.446 5.446 0 0 1 1.45 7.09l.002.001h-.002l-5.344 9.257c.206.01.413.016.621.016 6.627 0 12-5.373 12-12 0-1.54-.29-3.011-.818-4.364zM12 16.364a4.364 4.364 0 1 1 0-8.728 4.364 4.364 0 0 1 0 8.728Z"/>
             </svg>
             <div className="flex flex-col items-start leading-tight">
-              <span className="text-[10px] text-foreground/50 uppercase tracking-wider">Coming Soon</span>
+              <span className="text-[10px] text-foreground/50 uppercase tracking-wider">Available on</span>
               <span className="text-sm font-medium">Chrome Web Store</span>
             </div>
-          </div>
+          </a>
           <div className="relative flex items-center gap-3 px-5 py-3 rounded-xl border border-foreground/15 bg-bg-accent/40 opacity-60 cursor-not-allowed select-none">
             <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 1.5c2.352 0 4.484.872 6.1 2.3L7.8 18.1A8.468 8.468 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5zm0 17c-2.352 0-4.484-.872-6.1-2.3L16.2 5.9A8.468 8.468 0 0 1 20.5 12c0 4.687-3.813 8.5-8.5 8.5z"/>
+              <path d="M20.452 3.445a11.002 11.002 0 00-2.482-1.908C16.944.997 15.098.093 12.477.032c-.734-.017-1.457.03-2.174.144-.72.114-1.398.292-2.118.56-1.017.377-1.996.975-2.574 1.554.583-.349 1.476-.733 2.55-.992a10.083 10.083 0 013.729-.167c2.341.34 4.178 1.381 5.48 2.625a8.066 8.066 0 011.298 1.587c1.468 2.382 1.33 5.376.184 7.142-.85 1.312-2.67 2.544-4.37 2.53-.583-.023-1.438-.152-2.25-.566-2.629-1.343-3.021-4.688-1.118-6.306-.632-.136-1.82.13-2.646 1.363-.742 1.107-.7 2.816-.242 4.028a6.473 6.473 0 01-.59-1.895 7.695 7.695 0 01.416-3.845A8.212 8.212 0 019.45 5.399c.896-1.069 1.908-1.72 2.75-2.005-.54-.471-1.411-.738-2.421-.767C8.31 2.583 6.327 3.061 4.7 4.41a8.148 8.148 0 00-1.976 2.414c-.455.836-.691 1.659-.697 1.678.122-1.445.704-2.994 1.248-4.055-.79.413-1.827 1.668-2.41 3.042C.095 9.37-.2 11.608.14 13.989c.966 5.668 5.9 9.982 11.843 9.982C18.62 23.971 24 18.591 24 11.956a11.93 11.93 0 00-3.548-8.511z"/>
             </svg>
             <div className="flex flex-col items-start leading-tight">
               <span className="text-[10px] text-foreground/50 uppercase tracking-wider">Coming Soon</span>
