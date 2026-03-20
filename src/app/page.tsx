@@ -8,7 +8,6 @@ import Footer from "@/components/footer";
 import MenuAnimation from "@/components/animata/list/menu-animation";
 import CertsBlock from "@/components/certs_block";
 import EducationBlock from "@/components/education_block";
-import ReactiveBackground from "@/components/reactive_background";
 
 export default function Home() {
   const menuItems = [
@@ -28,7 +27,6 @@ export default function Home() {
   return (
     // bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)]
     <div className="mx-auto overflow-x-hidden h-screen w-full bg-background">
-      <ReactiveBackground />
       <div className="flex flex-col xl:flex-row">
         <div id="home" className="relative h-screen sm:content-center xl:sticky xl:top-2 xl:w-1/2 xl:-mb-30">
           <IntroBlock />
