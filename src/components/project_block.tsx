@@ -42,28 +42,28 @@ export default function ProjectBlock() {
       legacy: false,
       base_className: ""
     },
-    { 
-      title: "ThisWebsiteDoesNothing.com",
-      logo: (
-        <div className={`${bebas.className} text-base pt-8 select-none`}>
-          <p>Well...</p>
-          <p className="text-3xl -my-2">What did you expect?</p>
-          <p className="text-right">...Something?</p>
-        </div>
-      ),
-      description: "Exactly what it sounds like! This website does nothing.",
-      href: "https://www.thiswebsitedoesnothing.com/",
-      legacy: false,
-      base_className: "",
-    },
-    { 
-      title: "InvenPro",
-      logo: <img loading="lazy" className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" alt="InvenPro Logo" />,
-      description: "InvenPro is a legacy, pre-alpha inventory program developed for a Land Surveying firm.",
-      href: "https://github.com/Choheron/InvenPro",
-      legacy: true,
-      base_className: "",
-    },
+    // { 
+    //   title: "ThisWebsiteDoesNothing.com",
+    //   logo: (
+    //     <div className={`${bebas.className} text-base pt-8 select-none`}>
+    //       <p>Well...</p>
+    //       <p className="text-3xl -my-2">What did you expect?</p>
+    //       <p className="text-right">...Something?</p>
+    //     </div>
+    //   ),
+    //   description: "Exactly what it sounds like! This website does nothing.",
+    //   href: "https://www.thiswebsitedoesnothing.com/",
+    //   legacy: false,
+    //   base_className: "",
+    // },
+    // { 
+    //   title: "InvenPro",
+    //   logo: <img loading="lazy" className="w-50 pt-8" src="https://raw.githubusercontent.com/Choheron/InvenPro/refs/heads/master/driverBin/images/LogoV1Alpha.png" alt="InvenPro Logo" />,
+    //   description: "InvenPro is a legacy, pre-alpha inventory program developed for a Land Surveying firm.",
+    //   href: "https://github.com/Choheron/InvenPro",
+    //   legacy: true,
+    //   base_className: "",
+    // },
   ]
 
   return (

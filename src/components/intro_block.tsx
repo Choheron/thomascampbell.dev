@@ -35,9 +35,6 @@ export default function IntroBlock() {
   return (
     <div className="relative mx-auto w-full max-w-200 h-fit">
       <div className="max-w-full">
-        <div className="py-20">
-          <Headshot />
-        </div>
         <p className="text-sm sm:text-base font-bold pl-4">Hello! I'm</p>
         <h1>
           <WaveReveal
@@ -46,7 +43,7 @@ export default function IntroBlock() {
             text="Thomas Campbell"
           />
         </h1>
-        <div className="relative flex h-fit w-full max-w-full items-center justify-center overflow-hidden rounded text-lg">
+        <div className="relative flex h-fit w-full max-w-full items-center justify-center overflow-hidden rounded text-sm">
           <Marquee 
             pauseOnHover={true}
           >
@@ -55,7 +52,7 @@ export default function IntroBlock() {
             })}
           </Marquee>
         </div>
-        <div className="absolute sm:relative w-fit mx-auto pt-2">
+        <div className="sm:relative w-fit mx-auto pt-2">
           <AnimatedDock 
             items={dockLinks} 
             largeClassName="max-w-lg"

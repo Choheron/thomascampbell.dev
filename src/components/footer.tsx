@@ -2,7 +2,7 @@ export default function Footer() {
    const currYear = new Date().getFullYear()
 
   return (
-    <div className="w-full flex justify-center py-2">
+    <div className="w-full flex justify-center py-3 border-bg-accent border-t">
       <div>
         <div className="flex gap-1">
         <p className="text-xs">&copy;</p>
