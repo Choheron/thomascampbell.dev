@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     // bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)]
-    <div className="mx-auto overflow-x-hidden min-h-screen w-full bg-background flex flex-col">
+    <div className="mx-auto overflow-x-hidden min-h-screen w-full flex flex-col">
       <div className="flex flex-col xl:flex-row flex-1">
         <div id="home" className="relative h-screen content-center xl:sticky xl:top-2 xl:w-1/2 xl:-mb-30">
           <IntroBlock />

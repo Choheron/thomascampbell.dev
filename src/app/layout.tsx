@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import "./globals.css";
 import ThemeProvider from "@/utils/ThemeProvider";
 import ThemeSwitcher from "@/components/theme_switcher";
+import LavaLampBackground from '@/components/lava_lamp_background_loader'
 
 const ShareTechMono = localFont({
   src: '../../public/fonts/ShareTechMono-Regular.ttf'
@@ -131,6 +132,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
         >
+          <LavaLampBackground />
           <div className="absolute top-2 left-2 z-10000000000">
             <ThemeSwitcher />
           </div>
