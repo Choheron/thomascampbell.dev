@@ -37,7 +37,7 @@ const features = [
     title: "Pricing",
     description: "Cost of ClickReporter.",
     basic: "Free",
-    pro: "Single $7 Charge",
+    pro: "Single $4 Charge",
   },
 ]
 
