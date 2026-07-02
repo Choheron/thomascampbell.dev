@@ -1,9 +1,9 @@
 export default function AboutBlock() {
   const aboutMeText = `	
 	  I am <b>Thomas Campbell</b>, a <i>Site Reliability Engineer</i> based in Austin, TX, currently working on the <b>Oracle Kubernetes Engine</b> at OCI. I build highly available, scalable, and automated systems that enable teams to deliver software efficiently and reliably using <b>Kubernetes</b>, <b>Cloud Infrastructure</b>, <b>Automation</b>, and <b>Software Development</b>.
-    I have spent my career building, deploying, maintaining, and scaling robust and highly available applications, systems, and services.
+    I have spent my career building, deploying, maintaining, and scaling robust and highly available applications, systems, and services. I find myself facinated by highly available systems and getting hands on to see how Infrastructure and servies work. In my free time I code side projects, climb, take pictures, and work on my homelab.
     <br><br>
-    I find myself driven by my need to create.
+    I find myself driven by my urge to learn, build, create, and explore.
 	`
 
 

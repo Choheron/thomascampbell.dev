@@ -25,16 +25,16 @@ export default function Home() {
   return (
     // bg-[url(/images/background/backgroundLight.jpg)] dark:bg-[url(/images/background/backgroundDark.jpg)]
     <div className="mx-auto overflow-x-hidden min-h-screen w-full bg-background flex flex-col">
-      <div className="flex flex-col xl:flex-row flex-1">
-        <div id="home" className="relative h-screen content-center xl:sticky xl:top-2 xl:w-1/2 xl:-mb-30">
+      <div className="flex flex-col">
+        <div id="home" className="flex h-screen items-center">
           <IntroBlock />
         </div>
-        <div className="max-w-full 2xl:w-1/2 mx-auto flex flex-col gap-2 pb-10 xl:w-1/2 xl:p-2 pl-0 my-auto">
+        <div className="max-w-full mx-auto flex flex-col gap-2 pb-10 px-2 xl:w-1/2 xl:p-2 pl-0 my-auto">
           <div id="about-section" className="py-5 lg:rounded-2xl bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
             <AboutBlock />
           </div>
           <div className="flex flex-col lg:flex-row xl:flex-col gap-2 w-full">
-            <div id="project-section" className="py-5 lg:rounded-2xl lg:w-1/2 xl:w-full bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
+            <div id="project-section" className="py-5 lg:rounded-2xl w-full xl:w-full bg-bg-accent/70 drop-shadow-xl drop-shadow-gray-400 dark:drop-shadow-black">
               <ProjectBlock />
             </div>
           </div>
